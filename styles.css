@@ -209,6 +209,31 @@ a {
     margin-right: 50px;
 }
 
+@media (max-width: 399.999px) {
+    .box {
+        gap: 1em;
+    }
+
+    .animatedH1 {
+        font-size: 2em;
+        letter-spacing: 5px;
+    }
+
+    header {
+        height: 30vh;
+    }
+
+    .text button {
+        height: 40px;
+        width: 8em;
+    }
+
+    .btn {
+        margin-right: 10px;
+    }
+}
+
+
 @media (min-width: 400px) and (max-width: 540.2999px) {
     .box {
         gap: 3em;

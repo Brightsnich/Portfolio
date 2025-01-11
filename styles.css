@@ -234,7 +234,7 @@ a {
 }
 
 
-@media (min-width: 400px) and (max-width: 540.2999px) {
+@media (min-width: 400px) and (max-width: 540.299px) {
     .box {
         gap: 3em;
     }
@@ -274,7 +274,7 @@ a {
 
     .text button {
         height: 50px;
-        width: 12.8em;
+        width: 12em;
     }
 
     .btn {

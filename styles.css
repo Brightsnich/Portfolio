@@ -1,0 +1,283 @@
+:root {
+    --green: #68db68;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    align-items: center;
+}
+
+.header-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
+    bottom: 0;
+}
+
+header img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.animatedTexts {
+    margin-left: 8%;
+    position: absolute;
+    z-index: 1;
+}
+
+.animatedH1 {
+    text-shadow: 2px 2px 2px #000;
+    line-height: 1em;
+    color: var(--green);
+    font-size: 7vw;
+    letter-spacing: 10px;
+    font-family: kanit;
+    font-weight: lighter;
+    border-right: 5px solid #fff;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 3s steps(22),
+        cursor .4s step-end infinite alternate;
+    /* animation-play-state: paused; */
+}
+
+/* cursor blinking */
+@keyframes cursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #fff;
+    }
+}
+
+/* typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.midSection {
+    background-color: #f5eded;
+    height: 50vh;
+    position: relative;
+}
+
+.box {
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+    gap: 15em;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.items {
+    position: relative;
+    margin-bottom: 15px;
+
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
+    bottom: 0;
+    border-radius: 70%;
+    border: 5px solid;
+    border-color: var(--green) var(--green) black black;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.picture {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+h2 {
+    text-align: center;
+    font-family: kanit;
+    line-height: 1;
+
+}
+
+p {
+    text-align: center;
+    font-family: franklin gothic;
+    color: rgb(133, 124, 124);
+    margin: 5px 0px 10px;
+}
+
+button {
+    width: 170px;
+    height: 30px;
+    background-color: rgb(37, 36, 36);
+    color: #fff;
+    font-family: 'Franklin Gothic Medium';
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    padding: 2px;
+}
+
+.links {
+    text-align: center;
+}
+
+#secondSection {
+    background-color: #000;
+    height: 70vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    margin-top: auto;
+}
+
+.text {
+    padding: 7% 20% 0% 8%;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.text h1 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.text-p {
+    color: #fff;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.text button {
+    margin-top: 6%;
+    text-transform: capitalize;
+    font-family: kanit;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: 20px;
+}
+
+.btn {
+    margin-right: 50px;
+}
+
+@media (min-width: 400px) and (max-width: 540.2999px) {
+    .box {
+        gap: 3em;
+    }
+
+    .animatedH1 {
+        font-size: 2em;
+        letter-spacing: 5px;
+    }
+
+    header {
+        height: 50vh;
+    }
+
+    .text button {
+        height: 50px;
+        width: 10em;
+    }
+
+    .btn {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 540.3px) and (max-width: 700.3999px) {
+    .box {
+        gap: 6em;
+    }
+
+    .animatedH1 {
+        font-size: 7.5vw;
+        letter-spacing: 5px;
+    }
+
+    header {
+        height: 70vh;
+    }
+
+    .text button {
+        height: 50px;
+        width: 12.8em;
+    }
+
+    .btn {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 700.4px) and (max-width: 900.3px) {
+    .box {
+        gap: 10em;
+    }
+
+    .animatedH1 {
+        font-size: 7.5vw;
+        letter-spacing: 5px;
+    }
+
+    header {
+        height: 70vh;
+    }
+
+    .text button {
+        height: 50px;
+        width: 12.8em;
+        margin-top: 9%;
+    }
+
+    .btn {
+        margin-right: 30px;
+    }
+}
